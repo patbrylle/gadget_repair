@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>gadget_repair</RootNamespace>
+    <OptionStrict>On</OptionStrict>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Models\Customer.vb" Link="Models\Customer.vb" />
+    <Compile Include="..\Models\Gadget.vb" Link="Models\Gadget.vb" />
+    <Compile Include="..\Models\Repair.vb" Link="Models\Repair.vb" />
+
+    <Compile Include="..\Data\ApplicationDbContext.vb" Link="Data\ApplicationDbContext.vb" />
+    <Compile Include="..\Data\DatabaseConfig.vb" Link="Data\DatabaseConfig.vb" />
+    <Compile Include="..\Data\ApplicationDbContextFactory.vb" Link="Data\ApplicationDbContextFactory.vb" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.9" />
+
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="9.0.0" />
+  </ItemGroup>
+
+</Project>

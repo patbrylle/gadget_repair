@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+  <OutputType>WinExe</OutputType>
+  <TargetFramework>net10.0-windows</TargetFramework>
+  <RootNamespace>gadget_repair</RootNamespace>
+  <StartupObject>Sub Main</StartupObject>
+  <UseWindowsForms>true</UseWindowsForms>
+  <EnableWindowsTargeting>true</EnableWindowsTargeting>
+  <NoWarn>$(NoWarn);WFO1000;SYSLIB0060</NoWarn>
+</PropertyGroup>
+  <ItemGroup>
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+  <Compile Remove="MigrationTool/**/*.vb" />
+  <None Remove="MigrationTool/**/*" />
+</ItemGroup>
+<ItemGroup>
+  <Compile Remove="gadget_repair.Web/**" />
+  <EmbeddedResource Remove="gadget_repair.Web/**" />
+  <None Remove="gadget_repair.Web/**" />
+</ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.105.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.9" />
+
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.9">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="9.0.0" />
+  </ItemGroup>
+
+</Project>
