@@ -1,5 +1,0 @@
-/home/brylle/Projects/VBNet_projects/gadget_repair/obj/Debug/net10.0/gadget_repair.vbproj.AssemblyReference.cache
-/home/brylle/Projects/VBNet_projects/gadget_repair/obj/Debug/net10.0/gadget_repair.GeneratedMSBuildEditorConfig.editorconfig
-/home/brylle/Projects/VBNet_projects/gadget_repair/obj/Debug/net10.0/gadget_repair.AssemblyInfoInputs.cache
-/home/brylle/Projects/VBNet_projects/gadget_repair/obj/Debug/net10.0/gadget_repair.AssemblyInfo.vb
-/home/brylle/Projects/VBNet_projects/gadget_repair/obj/Debug/net10.0/gadget_repair.vbproj.CoreCompileInputs.cache
