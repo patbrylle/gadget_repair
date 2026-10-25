@@ -252,3 +252,6 @@ orleans.codegen.cs
 
 # Vim
 *.swp
+# .NET build and publish outputs
+**/bin/
+**/obj/
