@@ -1,0 +1,254 @@
+
+## GadgetRepair - Visual Studio / VB.NET
+## Ignore temporary files, build results, IDE settings, and local data.
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Visual Studio and IDE folders
+.vs/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+.history/
+.localhistory/
+.vshistory/
+_ReSharper*/
+*.DotSettings.user
+*.sln.iml
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+artifacts/
+publish/
+ClientBin/
+Generated_Code/
+BenchmarkDotNet.Artifacts/
+
+# Compiled files
+*.dll
+*.exe
+*.pdb
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+!Directory.Build.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp_proj
+*_wpftmp.csproj
+*.pidb
+*.svclog
+*.scc
+*.vspscc
+*.vssscc
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
+*.binlog
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*~
+~$*
+*.stackdump
+mono_crash.*
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+*.mdf
+*.ldf
+*.ndf
+*.dbmdl
+*.jfm
+healthchecksdb
+
+# Database backups and reports
+*.rdl.data
+*.bim.layout
+*.bim_*.settings
+*- [Bb]ackup.rdl
+*- [Bb]ackup ([0-9]).rdl
+*- [Bb]ackup ([0-9][0-9]).rdl
+
+# Test results and code coverage
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+TestResult.xml
+nunit-*.xml
+*.VisualState.xml
+*.coverage
+*.coveragexml
+coverage*.json
+coverage*.xml
+coverage*.info
+OpenCover/
+BenchmarkDotNet.Artifacts/
+
+# NuGet packages and generated dependencies
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.fragment.lock.json
+
+# Node.js
+node_modules/
+.ntvs_analysis.dat
+
+# Python
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Visual Studio profiling and tracing
+*.psess
+*.vsp
+*.vspx
+*.sap
+*.e2e
+
+# Visual Studio extensions and history
+_Chutzpah*
+_NCrunch_*
+.*crunch*.local.xml
+nCrunchTemp_*
+*.mm.*
+AutoTest.Net/
+.sass-cache/
+.axoCover/*
+!.axoCover/settings.json
+_TeamCity*
+*.dotCover
+.mfractor/
+.ionide/
+.paket/paket.exe
+paket-files/
+.fake/
+.cr/personal
+*.tss
+*.jmconfig
+
+# Azure and publishing
+*.azurePubxml
+*.pubxml
+*.publishproj
+PublishScripts/
+csx/
+*.build.csdef
+ecf/
+rcf/
+AppPackages/
+BundleArtifacts/
+Package.StoreAssociation.xml
+_pkginfo.txt
+*.appx
+*.appxbundle
+*.appxupload
+ScaffoldingReadMe.txt
+
+# Legacy Visual Studio files
+*.vbw
+*.vbp
+*.dsw
+*.dsp
+*.opt
+*.plg
+*.ncb
+*.aps
+ipch/
+dlldata.c
+
+# Legacy project conversion backups
+_UpgradeReport_Files/
+Backup*/
+UpgradeLog*.XML
+UpgradeLog*.htm
+ServiceFabricBackup/
+*.rptproj.bak
+MigrationBackup/
+
+# Other generated files
+Generated\ Files/
+FakesAssemblies/
+FodyWeavers.xsd
+orleans.codegen.cs
+*.GhostDoc.xml
+*.gpState
+*.nvuser
+*.publishsettings
+*.pfx
+
+# Vim
+*.swp
