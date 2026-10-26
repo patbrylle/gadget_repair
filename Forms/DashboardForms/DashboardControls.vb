@@ -241,15 +241,26 @@ Namespace Forms
                             g.DrawLine(pen, P(0.5F, 0.4F), P(0.5F, 0.62F))
                             g.FillEllipse(brush, ox + 0.45F * w, oy + 0.7F * h, 0.1F * w, 0.1F * h)
 
-                        Case DashGlyph.Coin
+                                                Case DashGlyph.Coin
 
                             g.DrawEllipse(pen, ox + 0.06F * w, oy + 0.06F * h, 0.88F * w, 0.88F * h)
 
-                            Dim pesoFont As Font = Ui(Math.Max(6.0F, h * 0.46F), FontStyle.Bold)
+                            Dim capH As Single = h * 0.42F
+                            Dim pw As Single = capH * 0.75F
+                            Dim px As Single = ox + (w - pw) / 2.0F
+                            Dim py As Single = oy + (h - capH) / 2.0F
+                            Dim bowlH As Single = capH * 0.6F
+                            Dim stemX As Single = px + pw * 0.12F
+                            Dim rightX As Single = px + pw
 
-                            DrawText(g, ChrW(&H20B1).ToString(), pesoFont, color,
-                                     New RectangleF(ox, oy, w, h),
-                                     StringAlignment.Center, StringAlignment.Center)
+                            Using thin As New Pen(color, Math.Max(1.0F, w / 14.0F))
+                                g.DrawLine(thin, stemX, py, stemX, py + capH)
+                                g.DrawLine(thin, stemX, py, rightX - bowlH / 2.0F, py)
+                                g.DrawArc(thin, rightX - bowlH, py, bowlH, bowlH, -90.0F, 180.0F)
+                                g.DrawLine(thin, stemX, py + bowlH, rightX - bowlH / 2.0F, py + bowlH)
+                                g.DrawLine(thin, px, py + capH * 0.27F, rightX + 1.0F, py + capH * 0.27F)
+                                g.DrawLine(thin, px, py + capH * 0.45F, rightX + 1.0F, py + capH * 0.45F)
+                            End Using
 
                         Case DashGlyph.Inventory
 

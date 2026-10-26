@@ -299,18 +299,6 @@ Namespace Forms
 
         End Sub
 
-
-        ' ============================================================
-        ' CURRENCY FORMAT
-        ' ============================================================
-
-        Private Function FormatPeso(value As Decimal) As String
-
-            Return ChrW(&H20B1).ToString() & value.ToString("#,##0.00")
-
-        End Function
-
-
         ' ============================================================
         ' SHARED CHART HELPERS
         ' ============================================================
